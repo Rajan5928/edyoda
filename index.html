@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="index.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<header>
+        <div class="topbar">
+            <div class="topbar-leftmenu">
+                <div class="topbar-logoWrapper">
+                    <img src="https://cdn.knoji.com/images/logo/kafene.jpg?aspect=center&snap=false" alt="Logo" />
+                    <p class="topbar-Brandname">Kafene</p>
+                </div>
+                <nav>
+                    <a id="ordersPage" class="topbar-menuItem" href="OrderListingPage.html">Orders</a>
+                    <a id="productsPage" class="topbar-menuItem" href="ProductsPage.html">Products</a>
+                    <a id="usersPage" class="topbar-menuItem" href="users.html">Users</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<input type="text" id="username" class="form-control" placeholder="username">
+						
+					</div>
+					<div class="input-group form-group">
+						<input type="password" id="password" class="form-control" placeholder="password">
+					</div>
+					<div class="row align-items-center remember">
+					</div>
+					<div class="form-group">
+						<input type="submit" id="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
