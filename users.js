@@ -50,14 +50,13 @@ var formField = document.getElementById('myForm');
 formField.onsubmit = function(e) {
     e.preventDefault();
     searchedName = e.target.search.value;
-    console.log(searchedName);
     if(searchedName.length < 2) {
         alert("Please enter at least 2 characters");
     }
     else {
         mainDiv.innerHTML = "";
         for(var z = 0; z< data.length; z++) {
-            if (data[z].fullName.toLowerCase().includes(searchedName)) {
+            if (data[z].fullName.toLowerCase().includes(searchedName.toLowerCase())) {
                 mainDiv.appendChild(userDertails(data[z]));
             }
         }
